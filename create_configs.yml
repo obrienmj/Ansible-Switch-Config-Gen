@@ -9,6 +9,6 @@
       template: src=./config_templates/2960template.j2 dest=./configs/{{ item.hostname }}.txt
 
       with_items:
-        - { hostname: "{{hostname}}", ports: "{{ports}}", ipaddress: "{{ip}}", gateway: "{{gw}}", siteid: "{{BU}}" }
+        - { hostname: "{{name}}", ports: "{{po}}", ipaddress: "{{ip}}", gateway: "{{gw}}", siteid: "{{BU}}" }
           # - { hostname: TEST-SW02, ports: 48, ipaddress: '2.2.2.2', gateway: '2.2.2.1', siteid: 'BU-####' }
 ...
